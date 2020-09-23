@@ -1,2 +1,7 @@
 server:
   port: 9090
+spring:
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: aliyun:9300

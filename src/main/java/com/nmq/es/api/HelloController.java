@@ -1,6 +1,7 @@
 package com.nmq.es.api;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import io.swagger.annotations.Api;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,9 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @modifyDate
  */
 @RestController
+@Api(value = "ES 搜索服务")
 public class HelloController {
-    @RequestMapping("/")
+    @GetMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "Greetings from Search service!";
     }
 }
